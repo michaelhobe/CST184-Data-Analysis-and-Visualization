@@ -1,0 +1,25 @@
+
+# Scenario:
+# You are assessing whether a country qualifies for Policy A.
+# Policy A is designed to reward countries with high renewable energy use
+# and low CO₂ emissions per capita.
+
+# Country data (you can modify these values below)
+country_name = "Nepal"
+percent_renewable = 60
+co2_emissions = 1.8
+region = "Asia"
+
+# Define logical conditions
+is_high_renewable = percent_renewable > 50
+is_low_emission = co2_emissions < 2
+
+# Combined logical proposition using AND
+if is_high_renewable and is_low_emission:
+    print(f"{country_name} qualifies for Policy A")
+else:
+    print(f"{country_name} does not qualify for Policy A")
+
+# Display Boolean values for learning
+print("High Renewable:", is_high_renewable)
+print("Low Emission:", is_low_emission)
